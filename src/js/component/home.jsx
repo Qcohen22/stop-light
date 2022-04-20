@@ -17,8 +17,21 @@ const Home = () => {
 							: "stop-light red"
 					}
 					onClick={() => setLight("glo")}></div>
-				{/* <div className={stop-light yellow}></div>
-			<div className={stop-light green}></div> */}
+				<div
+					className={
+						light === "yellow"
+							? "stop-light yellow glo"
+							: "stop-light yellow"
+					}
+					onClick={() => setLight("yellow")}></div>
+
+				<div
+					className={
+						light === "green"
+							? "stop-light green glo"
+							: "stop-light green"
+					}
+					onClick={() => setLight("green")}></div>
 			</div>
 		</>
 	);
